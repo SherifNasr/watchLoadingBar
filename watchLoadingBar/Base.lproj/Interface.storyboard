@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchLoadingBar" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Loading Bar" id="OCg-KC-2iL"/>
+                        <group width="136" height="27" alignment="center" verticalAlignment="center" id="mGR-UL-lOD">
+                            <items>
+                                <group width="0.5" height="1" alignment="left" verticalAlignment="center" id="cl1-FC-K3m">
+                                    <color key="backgroundColor" red="0.0" green="0.55463506711409394" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                            </items>
+                            <color key="backgroundColor" red="0.31811031879194629" green="0.030673238255033559" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="2dL-Df-fne">
+                            <items>
+                                <button width="0.32500000000000001" alignment="left" title="1/4" id="0uw-2S-AWC">
+                                    <connections>
+                                        <action selector="loadQuarterofBar" destination="AgC-eL-Hgc" id="UrF-5Z-cYB"/>
+                                    </connections>
+                                </button>
+                                <button width="0.32500000000000001" alignment="left" title="1/3" id="7Fe-q8-tHU">
+                                    <connections>
+                                        <action selector="loadOneOnTripleofLoadingBar" destination="AgC-eL-Hgc" id="oZQ-3g-hmx"/>
+                                    </connections>
+                                </button>
+                                <button width="0.32500000000000001" alignment="left" title="1/2" id="u9l-ib-NQM">
+                                    <connections>
+                                        <action selector="loadtohalfOfBar" destination="AgC-eL-Hgc" id="Xig-2b-WSm"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="8"/>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="loadingBar" destination="cl1-FC-K3m" id="QvF-lG-ai1"/>
+                        <outlet property="loadingBarContainer" destination="mGR-UL-lOD" id="OSi-70-mxH"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
